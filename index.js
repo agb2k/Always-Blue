@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 const port = 8080
+const mongoose = require('mongoose')
+mongoose.connect('localhost:8080/test')
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
