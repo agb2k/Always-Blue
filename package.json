@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.4",
+    "nodemon": "^2.0.12"
+  },
+  "name": "microfinance-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon index.js"
+  },
+  "repository": "https://github.com/agb2k/Always-Blue.git",
+  "author": "Yaw Hon, Abhinav, Mohanad",
+  "license": "MIT"
+}
