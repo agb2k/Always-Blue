@@ -13,10 +13,11 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.use('/dm', userRoute)
-app.use(express.static(path.join(__dirname,'./public')));
+app.use(express.static(path.join(__dirname,'/views/')));
 app.get('/', function(req,res){
-  res.sendFile(path.join(__dirname,'./views/index.html'));
+  res.sendFile(path.join(__dirname,'/views/index.html'));
 });
+// var path = __dirname + '/views/';
 
 const dbURI = 'mongodb+srv://yhChin:<password>@cluster0.u7hep.mongodb.net/HLB_Hack?retryWrites=true&w=majority'
 

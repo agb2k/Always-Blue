@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link rel = "stylesheet" href="/views/style/request.css">
+    <link rel = "stylesheet" href="style/request.css">
      <!-- Bootstrap CSS v5.0.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
@@ -18,7 +18,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
-  <title>Document</title>
+  <title>Request</title>
 </head>
 
 
@@ -36,7 +36,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#intro">Home</a>
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about-us">About Us</a>
@@ -59,15 +59,15 @@
   <div class="container">
 
     <div class="d-flex flex-column  min-vh-100 justify-content-center align-items-center">
-      <form>
+      <form action="/dm/request-form" method="POST">
         <div class="mb-3">
           <label for="amountrequested" class="form-label text-light">Desired amount:</label>
-          <input type="number" class="form-control" id="amountrequested">
+          <input type="number" id = "amount" name="id" class="form-control">
 
         </div>
         <div class="mb-3">
           <label for="reqInfo" class="form-label text-light"> Info: </label>
-          <textarea class="form-control" id="reqInfo" aria-describedby="infoHelp" rows="3"> </textarea>
+          <textarea class="form-control" id="request_reason" name="requested_reason" aria-describedby="infoHelp" rows="3"> </textarea>
           <small id="infoHelp" class="form-text text-muted">Please explain why you desire to withdraw the amount
             stated</small>
         </div>
@@ -75,7 +75,7 @@
 
         <div class=" mb-3">
           <label for="basic-url" class="form-label text-light">Links:</label>
-          <input type="text" class="form-control" id="urllink" aria-describedby="urlHelp">
+          <input type="text" class="form-control" id="request_documents" aria-describedby="urlHelp">
           <small id="urlHelp" class="form-text text-muted">Images or any documents </small>
 
         </div>
