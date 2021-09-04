@@ -27,7 +27,7 @@ const requestSchema = new Schema({
 	request_date: { type: Date, default: Date.now  },
 	request_start_date: { type: Date, default: Date.now  },
 	request_approval_date: { type: Date, default: Date.now  },
-	request_approval_status: { type: String, required: true },
+	request_approval_status: { type: String, required: true, default: 'approved' },
 	request_reason: { type: String, required: true },
 	request_documents: { type: String, required: true },
 	createdAt: { type: Date, default: Date.now },

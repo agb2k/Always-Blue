@@ -6,12 +6,12 @@ const connectDB = require('./connection');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-const userRoute = require('./data_management/index')
+const route = require('./data_management/index')
 
 app.use(bodyParser.json());
 app.use(cors());
 
-app.use('/user', userRoute)
+app.use('/', route)
 
 const dbURI = 'mongodb+srv://yhChin:<password>@cluster0.u7hep.mongodb.net/HLB_Hack?retryWrites=true&w=majority'
 
