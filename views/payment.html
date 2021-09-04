@@ -6,10 +6,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
 
-<body>
-    <p>Payment page</p>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+</head>
+    
+<body class="bg-dark">
+    <div class="row">
+    
+        <div class="d-flex flex-column justify-content-start align-items-start text-light">
+            <h2>Current Pool:</h2>
+        </div>
+        </div>
+
+</div>
+ <div class="row">
+
+         <div class="col">
+             <div class="d-flex flex-column  min-vh-75 justify-content-start align-items-start">
+                 <img src="/views/resources/typing1.jpg" class="rounded-circle img-thumbnail" style="max-width:7%; max-height:10%;" alt="Sample image">
+             </div>
+
+         </div>
+
+ </div>
+
+
+ <!-- Table (for the transaction history)-->
+ <div class="container">
+     <div class="row">
+     
+         <div class="d-flex justify-content-between align-items-center">
+            <ul class="nav nav-tabs w-75">
+                <li class="nav-item"> <a class="nav-link active" href="#history">History</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Reports</a> </li>
+            </ul> <button class="btn btn-primary">New Transaction</button>
+         </div>
+         <div class="table-responsive mt-3">
+            <table class="table table-dark table-borderless">
+                <thead>
+                    <tr>
+     
+                        <th scope="col">Date</th>
+                        <th scope="col" class="text-right">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+     
+     
+                        <td class="text-muted">12 Jul 2020, 12:30 PM</td>
+                        <td class="d-flex  align-items-center"> <span class="fa fa-long-arrow-up mr-1"></span> $52.9 </td>
+                    </tr>
+                    <tr>
+     
+     
+                        <td class="text-muted">11 Jul 2020, 2:00 PM</td>
+                        <td class="d-flex align-items-center"> <span class="fa fa-long-arrow-up mr-1"></span> $18.9 </td>
+                    </tr>
+                    <tr>
+     
+     
+                        <td class="text-muted">10 Jul 2020, 8:30 PM</td>
+                        <td class="d-flex align-items-center"> <span class="fa fa-long-arrow-down mr-1"></span> $9,765.00 </td>
+                    </tr>
+                    <tr>
+     
+                        <td class="text-muted">12 May 2020, 4:30 PM</td>
+                        <td class="d-flex align-items-center"> <span class="fa fa-long-arrow-up mr-1"></span> $198.90 </td>
+                    </tr>
+                    <tr>
+                        <td class="text-muted">11 May 2020, 5:30 PM</td>
+                        <td class="d-flex align-items-center"> <span class="fa fa-long-arrow-up mr-1"></span> $12.90 </td>
+                    </tr>
+                    <tr>
+     
+     
+                        <td class="text-muted">10 May 2020, 01:30 PM</td>
+                        <td class="d-flex align-items-center"> <span class="fa fa-long-arrow-up mr-1"></span> $97.9 </td>
+                    </tr>
+                    <tr>
+                        <td class="text-muted">09 May 2020, 01:30 PM</td>
+                        <td class="d-flex align-items-center"> <span class="fa fa-long-arrow-up mr-1"></span> $97.9 </td>
+                    </tr>
+                </tbody>
+            </table>
+         </div>
+         <div class="d-flex justify-content-between align-items-center results"> <span class="pl-md-3">Showing<b class="text-white"> 1-7 0f 200 </b> trasactions</span>
+            <div class="pt-3">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item disabled"> <a class="page-link" href="#" aria-label="Previous"> <span aria-hidden="true">&lt;</span> </a> </li>
+                        <li class="page-item"> <a class="page-link" href="#" aria-label="Next"> <span aria-hidden="true">&gt;</span> </a> </li>
+                    </ul>
+                </nav>
+            </div>
+         </div>
+     </div>
+ </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 
 </html>
