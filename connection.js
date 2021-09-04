@@ -1,10 +1,10 @@
 var express = require('express');
 const app = express();
-var cors = require("cors");
+// var cors = require("cors");
 const mongoose = require('mongoose');
 
 //connection string to db
-const dbURI = 'mongodb+srv://yhChin:Jryan238110@cluster0.u7hep.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const dbURI = 'mongodb+srv://yhChin:Jryan238110@cluster0.u7hep.mongodb.net/HLB_Hack?retryWrites=true&w=majority'
 
 //Connect to database
 const connectDB = async()=>{

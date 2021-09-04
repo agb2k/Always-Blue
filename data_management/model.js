@@ -1,6 +1,5 @@
-import {
-	Schema, model, ObjectId, Types,
-      } from 'mongoose';
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema
 
 const userSchema = new Schema({
 	pool_id: { type: String, required: true },
@@ -43,8 +42,6 @@ const transactionSchema = new Schema({
 	createdAt: { type: Date, default: Date.now },
 	updatedAt: { type: Date, default: Date.now },
 })
-
-
 
 const userData = mongoose.model('UserData', userSchema)
 const poolData = mongoose.model('PoolData', poolSchema)
