@@ -4,10 +4,6 @@ const port = 8080
 const mongoose = require('mongoose')
 mongoose.connect('localhost:8080/test')
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-
 const dmRouter = require('./data_management/index')
 app.use("/dm", dmRouter)
 
