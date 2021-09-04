@@ -11,7 +11,7 @@ const userRoute = require('./data_management/index')
 app.use(bodyParser.json());
 app.use(cors());
 
-app.use('/user', userRoute)
+app.use('/', userRoute)
 
 const dbURI = 'mongodb+srv://yhChin:<password>@cluster0.u7hep.mongodb.net/HLB_Hack?retryWrites=true&w=majority'
 

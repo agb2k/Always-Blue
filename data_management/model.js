@@ -24,9 +24,9 @@ const requestSchema = new Schema({
 	user_id: { type: String, required: true },
 	amount: { type: Number, required: true },
 	max_money_in_per_month: { type: Number, required: true },
-	request_date: { type: Date, default: Date.now  },
-	request_start_date: { type: Date, default: Date.now  },
-	request_approval_date: { type: Date, default: Date.now  },
+	// request_date: { type: Date, default: Date.now  },
+	// request_start_date: { type: Date, default: Date.now  },
+	// request_approval_date: { type: Date, default: Date.now  },
 	request_approval_status: { type: String, required: true },
 	request_reason: { type: String, required: true },
 	request_documents: { type: String, required: true },
@@ -48,4 +48,4 @@ const poolData = mongoose.model('PoolData', poolSchema)
 const requestData = mongoose.model('RequestData', requestSchema)
 const transactionData = mongoose.model('TransactionData', transactionSchema)
 
-module.exports = userData, poolData, requestData, transactionData
+module.exports = { userData, poolData, requestData, transactionData } 
