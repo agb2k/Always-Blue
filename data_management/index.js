@@ -3,6 +3,10 @@ const {userData} = require('./model')
 const {requestData} = require('./model')
 const router = express.Router()
 
+router.post('/', async (req, res) => {
+	res.sendFile(path.join(__dirname,'../views/index.html'));
+})
+
 router.post('/user', async (req, res) => {
 	const user = new userData({  
 	  pool_id: req.body.pool_id,
