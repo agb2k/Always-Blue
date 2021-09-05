@@ -1,27 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
-
-
-  <link rel="stylesheet" href="style/pool.css">
-  <!-- Bootstrap CSS v5.0.2 -->
+      <!-- Bootstrap CSS v5.0.2 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
-  <title>Request</title>
+  integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style/pool.css">
+    <title>Pool</title>
+    
 </head>
 
-
 <body>
-
-
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
@@ -47,42 +39,38 @@
       </div>
     </nav>
 
-  <!-- Form -->
-  <div class="container">
 
-    <div class="d-flex flex-column  min-vh-100 justify-content-center align-items-center">
-      <form action="/dm/request-form" method="POST">
-        <div class="mb-3">
-          <label for="amountrequested" class="form-label ">Desired amount:</label>
-          <input type="number" id = "amount" name="id" class="form-control">
+        
 
+        <div class="container">
+            <div class="d-flex justify-content-evenly  min-vh-100 justify-content-center align-items-center">
+                <div class="row align-items-center">
+             
+                      <div class="col">
+                      <div class="card" style="width: 18rem;border-radius: 12%;">
+                          
+                          <div class="card-body text-center">
+                              <img src="/resources/pool1.svg" class="card-img-top" style="padding: 25px;" alt="...">
+                            <h5 class="card-title text-center">Food & Beverage</h5>                            
+                          <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Total Number of Members: 8</li>
+                            <li class="list-group-item">Total Amount in Pool: $640 </li>
+                            <li class="list-group-item">Monthly Deposit: $80</li>
+                          </ul>
+                          <a href="/request.html" class="btn btn-primary">Request to Withdraw</a>
+                          </div>
+                        </div>
+                  </div>                   
+                </div>
+            </div>
         </div>
-        <div class="mb-3">
-          <label for="reqInfo" class="form-label "> Info: </label>
-          <textarea class="form-control" id="request_reason" name="requested_reason" aria-describedby="infoHelp" rows="3"> </textarea>
-          <small id="infoHelp" class="form-text text-muted">Please explain why you desire to withdraw the amount
-            stated</small>
-        </div>
-
-
-        <div class=" mb-3">
-          <label for="basic-url" class="form-label ">Links:</label>
-          <input type="text" class="form-control" id="request_documents" aria-describedby="urlHelp">
-          <small id="urlHelp" class="form-text text-muted">Images or any documents </small>
-
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-
-    </div>
-  </div>
 
 
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>    
 </body>
 
 </html>

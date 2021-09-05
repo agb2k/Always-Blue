@@ -22,30 +22,24 @@
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#intro" style="position: relative; left: 30px"><img class="logo"
-            src="resources/logo1.png" /></a>
+        <a class="navbar-brand" href="/index.html" style="position: relative; left: 30px"><img class="logo"
+            src="resources/logo1.png" style="  max-width: 70%;max-height: 70%;" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#intro">Home</a>
+            <li class="nav-item"  style="  padding-right: 0.5rem;padding-left: 1.5rem;">
+              <a class="nav-link" aria-current="page" href="/index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about-us">About Us</a>
+            <li class="nav-item" style="  padding-right: 0.5rem;padding-left: 1.5rem;">
+              <a class="nav-link" href="/available_pools.html">Available Pools</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact-us">Contact Us</a>
+            <li class="nav-item" style="  padding-right: 0.5rem;padding-left: 1.5rem;">
+              <a class="nav-link" href="/pools.html">Current Pool</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
@@ -58,8 +52,9 @@
         </h1>
 
         <div class="vstack gap-4" id="buttons">
+          <a type="button" href="/available_pools.html" class="btn btn-secondary">Pool Info</a>
           <a type="button" href="/account.html" class="btn btn-secondary">My Account</a>
-          <a type="button" href="/request.html" class="btn btn-secondary">Request</a>
+          
           <a type="button" href="/payment.html" class="btn btn-secondary">Due Payment</a>
         </div>
 
